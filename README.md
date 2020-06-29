@@ -1,2 +1,3 @@
-# Intento de proyecto con un señor dolape
+# Panda puto
+
 Preceptor online - administrador de secundaria 
