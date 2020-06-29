@@ -4,7 +4,7 @@
     <b-button v-b-toggle.sidebar-backdrop>
       <b-icon-list></b-icon-list>
     </b-button>
-    <span><a href="logout" class="text-white">logout</a></span>
+    <span><a href="logout" class="text-white btn border">logout</a></span>
     </nav>
     
 

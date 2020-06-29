@@ -80395,9 +80395,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [
-      _c("a", { staticClass: "text-white", attrs: { href: "logout" } }, [
-        _vm._v("logout")
-      ])
+      _c(
+        "a",
+        { staticClass: "text-white btn border", attrs: { href: "logout" } },
+        [_vm._v("logout")]
+      )
     ])
   }
 ]
@@ -80430,7 +80432,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("nav", { staticClass: "navbar navbar-dark bg-dark" }, [
-      _c("a", { staticClass: "text-white", attrs: { href: "/" } }, [
+      _c("a", { staticClass: "text-white btn", attrs: { href: "/" } }, [
         _vm._v("Angie")
       ]),
       _vm._v(" "),
