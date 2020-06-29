@@ -9,6 +9,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     <title>Hello, world!</title>
   </head>
@@ -16,6 +17,12 @@
 
 
     <div id="app">
+      @auth
+          <navadmin-component></navadmin-component>
+      @endauth
+      @guest
+          <navguest-component></navguest-component>
+      @endguest
         @yield('section')
     </div>
       
