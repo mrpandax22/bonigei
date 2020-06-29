@@ -1,2 +1,2 @@
-# Intento de projecto con un señor dolape
+# Intento de proyecto con un señor dolape
 Preceptor online - administrador de secundaria 
