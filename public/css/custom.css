@@ -25,10 +25,15 @@ body{
 
 #buttonoscuro{
     background-color: #D7DDE8;
+    color:black;
+    border-block:0;
+    border-color: black;
 }
 #buttonoscuro:hover{
     background-color: #646c83;
     color:white;
+    border-block:0;
+    border-color: white;
 }
 
 #buttonclaro{

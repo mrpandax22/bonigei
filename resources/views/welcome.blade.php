@@ -8,7 +8,7 @@
         <div class="col"></div>
         <div class="col">
             <h2 class="display-3 text-center">Welcome</h2>
-            <a href="login" class="btn  btn-block btn-outline-dark">Login</a>
+            <a href="login" class="btn  btn-block" id="buttonoscuro">Login</a>
             <a href="register" class="btn  btn-block" id="buttonclaro">Register</a>
         </div>
         <div class="col"></div>

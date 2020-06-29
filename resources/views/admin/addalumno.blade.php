@@ -2,7 +2,7 @@
 @section('section')
 
 <div class="container-fluid text-center mt-3">
-    <h1 class="display-3"><u>Añadir alumno</u> </h1>
+    <h1 class="display-3">-Añadir alumno-</h1>
 </div>
 
 <div class="container-fluid row">
@@ -31,25 +31,25 @@
             @csrf
             <div class="form-group">
                 <label for="">Nombre</label>
-                <input name="nombre" type="text" class="form-control" >
+                <input name="nombre" type="text" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="">Apellido</label>
-                <input name="nombre" type="text" class="form-control" >
+                <input name="apellido" type="text" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="">Dni</label>
-                <input name="nombre" type="text" class="form-control" >
+                <input name="dni" type="integer" class="form-control" required>
             </div>
 
             <div class="form-group">
-            <select class="custom-select">
-                <option value="1">Grupo 1</option>
-                <option value="2">Grupo 2</option>
+            <select class="custom-select form-control" name="grupo" required>
+                <option value=1>Grupo 1</option>
+                <option value=2>Grupo 2</option>
             </select>
             </div>
             
-            <button type="submit" class="btn btn-success btn-block "> Enviar</button>
+            <button type="submit" class="btn btn-block " id="buttonclaro"> Enviar</button>
         </form>    
     </div>
 </div>
