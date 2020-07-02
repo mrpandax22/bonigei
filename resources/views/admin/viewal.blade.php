@@ -20,12 +20,12 @@
   <div class="mb-5 mt-5 row" style="margin-left:25rem">
     <form action="formsearchal" method="post">
       @csrf
-      <div class="form-row">
+      <div class="form-row border-dark bg-white shadow p-3 mb-3 bg-white rounded">
         <div class="col ">
-          <input name="dni" type="integer" class="form-control" placeholder="DNI" required>
+          <input name="dni" type="integer" class="form_input" placeholder="DNI" required>
         </div>
         <div class="col ">
-          <button type="submit" class="btn btn-success btn-block">Buscar</button>
+          <button type="submit" class="btn btn-dark btn-block">Buscar</button>
         </div>
       </div>
     </form>

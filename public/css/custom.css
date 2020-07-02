@@ -1,50 +1,92 @@
-#welcomedivv{
-    background: rgb(45,112,253);
-    background: linear-gradient(0deg, rgba(45,112,253,1) 0%, rgba(49,252,255,1) 70%);
+#welcomedivv {
+    background: rgb(45, 112, 253);
+    background: linear-gradient(0deg,
+            rgba(45, 112, 253, 1) 0%,
+            rgba(49, 252, 255, 1) 70%);
     height: 618px;
 }
 
-#addal{
-    background: linear-gradient(to right, #4ca1af, #c4e0e5);   
-    height: 618px; 
+#addal {
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);
+    height: 618px;
 }
 
-#addalmenu{
-    list-style:none;
+#addalmenu {
+    list-style: none;
 }
 
-#formaddal{
+#formaddal {
     width: fit-content;
 }
 
-body{
-    background: #757F9A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+    background: #757f9a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #d7dde8, #757f9a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #d7dde8, #757f9a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#buttonoscuro{
-    background-color: #D7DDE8;
-    color:black;
-    border-block:0;
+#buttonoscuroh {
+    background-color: #eff4ff;
+    color: black;
+    border-block: 0;
     border-color: black;
 }
-#buttonoscuro:hover{
-    background-color: #646c83;
-    color:white;
-    border-block:0;
+
+#buttonoscuroh:hover {
+    background-color: #4d5262;
+    color: white;
+    border-block: 0;
     border-color: white;
 }
 
-#buttonclaro{
-    background-color: #646c83;
-    color:white;
-    border-block:0;
+#buttonclaroh {
+    background-color: #4d5262;
+    color: white;
+    border-block: 0;
     border-color: white;
 }
-#buttonclaro:hover{
-    background-color: #D7DDE8;
-    color:black;
-    border-block:0;
+
+#buttonclaroh:hover {
+    background-color: #eff4ff;
+    color: black;
+    border-block: 0;
     border-color: black;
+}
+
+#buttonclaro {
+    background-color: #4d5262;
+    color: white;
+    border-block: 0;
+    border-color: white;
+}
+
+#buttonoscuro {
+    background-color: #eff4ff;
+    color: black;
+    border-block: 0;
+    border-color: black;
+}
+
+.form_input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1.5px solid gray;
+    outline: 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form_input:focus {
+    transition: 0.5s;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #646c83, #d7dde8);
+    border-image-slice: 1;
+}
+
+.form_input::placeholder {
+    color: dark;
+    opacity: 1;
 }

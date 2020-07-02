@@ -1967,11 +1967,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      variant: 'dark'
+      variant: "dark"
     };
   }
 });
@@ -1999,7 +1998,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -80440,7 +80439,7 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            staticClass: "text-white btn btn-sm border ",
+            staticClass: "text-white btn btn-sm border",
             attrs: { href: "login" }
           },
           [_vm._v("Login")]

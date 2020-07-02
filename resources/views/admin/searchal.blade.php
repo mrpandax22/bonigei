@@ -3,8 +3,8 @@
 
 <div class="container-fluid text-center">
     <h1 class="display-3 p-3">-Listado de alumnos-</h1>
-    
-    
+
+
 </div>
 
 @if ($errors->any())
@@ -16,46 +16,45 @@
 </div>
 @endif
 
-
-<div class="container mb-5" >
-  <div class="mb-5 mt-5 row align-content-center" style="margin-left:18rem">
-    <form action="formsearchal" method="post">
-      @csrf
-      <div class="form-row">
-        <div class="col ">
-          <input name="dni" type="integer" class="form-control" placeholder="DNI" required>
-        </div>
-        <div class="col ">
-          <button type="submit" class="btn btn-success btn-block">Buscar</button>
-        </div>
-        <div class="col ">
-          <a href="admin_viewal" class="btn btn-danger btn-block">Mostar Todos</a>
-      </div>
-      </div>
-    </form>
-    
-  </div>
   
+<div class="container mb-5">
+    <div class="mb-5 mt-5 row align-content-center" style="margin-left:22rem">
+        <form action="formsearchal" method="post">
+            @csrf
+            <div class="form-row border-dark bg-white shadow p-3 mb-3 bg-white rounded">
+                <div class="col ">
+                    <input name="dni" type="integer" class="form_input" placeholder="DNI" required>
+                </div>
+                <div class="col ">
+                    <button type="submit" class="btn btn-dark btn-block">Buscar</button>
+                </div>
+                <div class="col ">
+                    <a href="admin_viewal" class="btn btn-outline-dark btn-block">Mostar Todos</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
 
     <table class="table table-striped table-dark text-center">
         <thead>
-          <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">DNI</th>
-          </tr>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">DNI</th>
+            </tr>
         </thead>
         <tbody>
             @foreach ($datos as $item)
-                <tr>
-                    <td>{{$item->nombre}} </td>
-                    <td>{{$item->apellido}}</td>
-                    <td>{{$item->dni}}</td>
-                </tr>
+            <tr>
+                <td>{{$item->nombre}} </td>
+                <td>{{$item->apellido}}</td>
+                <td>{{$item->dni}}</td>
+            </tr>
             @endforeach
-          
+
         </tbody>
-      </table>
+    </table>
 
 </div>
 @endsection
