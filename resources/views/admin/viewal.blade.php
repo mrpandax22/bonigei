@@ -32,20 +32,20 @@
   </div>
    <!-- buscador por dni -->
 
-    <table class="table table-striped table-dark text-center">
-        <thead>
+    <table class="table table-light text-center shadow rounde table-hover">
+        <thead class="thead-dark">
           <tr>
-            <th scope="col">Nombre</th>
+            <th scope="col" >Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">DNI</th>
           </tr>
         </thead>
         <tbody>
             @foreach ($datos as $item)
-                <tr>
+                <tr >
                     <td>{{$item->nombre}} </td>
                     <td>{{$item->apellido}}</td>
-                    <td>{{$item->dni}}</td>
+                    <td> {{$item->dni}}</td>
                 </tr>
             @endforeach
           
